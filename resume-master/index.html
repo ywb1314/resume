@@ -60,82 +60,246 @@
 
                 <!--left-->
                 <div class="info_area info_left info_content">
-                    <h5>基本信息</h5>
-                    <ul class="info-list">
-                        <li>
-                            <label class="left-label">学历</label><span class="label-value">本科</span>
-                        </li>
-                        <li>
-                            <label class="left-label">毕业院校</label><span class="label-value">浙江万里学院</span>
-                        </li>
-                        <li>
-                            <label class="left-label">毕业年份</label><span class="label-value">2015</span>
-                        </li>
-                    </ul>
 
                     <h5>我的故事</h5>
-                    <p class="desc s1"><em class="count">2015</em>
-                        年做了第一份工作，主要负责原生项目开发，参与同城消费卡项目需求分析，和同事合作开发同城购物，支付，绑定支付卡等功能APP，及负责APP的迭代和维护。
+                    <p class="desc">
+                        2015年在宁波做了第一份工作，主要负责原生项目开发，参与同城消费卡项目需求分析，和同事合作开发同城购物，
+                        支付，绑定支付卡等功能APP，及负责APP的迭代和维护。
                     </p>
-                    <p class="desc s2"><em class="count">10</em>年做了第一份工作，工作很辛苦，也很喜欢，就这样一坐就做了1年，后来觉得公司不太适合自己就选择撤了。</p>
-                    <p class="desc s3"><em class="count">12</em>年做了第一份工作，工作很辛苦，也很喜欢，就这样一坐就做了1年，后来觉得公司不太适合自己就选择撤了。</p>
-                    <p class="desc">以上随便写的，s1 为第一个时间点，与右侧相对应</p>
+                    <p class="desc">
+                        2016年来到杭州，进入了一家做智能家居项目的公司，开始主要负责原生项目开发，迭代和维护已有智能家居APP项目，
+                        后主要开发负责智能家居APP的SDK优化和开发，提供产品的SDK相关技术支持。
+                        期间学习fastlane打包脚本，简化打包流程及优化打包环境等问题
+                    </p>
+                    <p class="desc">
+                        2018年由于公司转型，在维持老项目的同时，发展消防类项目，独立开发了由通过webView壳的APP，
+                        通过桥接的方式与原生发生交互。
+                        由于人员变动，智能家居的项目后续利用React Native独立重构了，减少开发成本，和加快了开发效率。
+                        后来觉得公司不太适合自己就选择撤了。
+                    </p>
+                    <p class="desc">
+                        2019年先是进行员工APP老项目的维护和开发，后独立开发了环保类APP项目及需求分析等。
+                        同年，之后就主要负责智能矿山项目及需求分析、产品设计，利用React Native独立开发，同时还有React Native组件和工具类的维护开发。
+                        期间独立搭建了自动化打包的框架，简化打包流程，方便测试找到最新包等优化。
+                    </p>
+                    <p class="desc">
+                        2020年和之后几年主要是学习按计划完成产品的代码编写，产品测试，并且保证代码质量，如何又好又快的开发出app。
+                        期间主要是开发矿山办公项目，偶尔其他项目人手不够的时候，帮忙进行后续开发
+                    </p>
 
                     <h5>我的/参与的一些项目</h5>
                     <ul>
                         <li class="clearfix">
-                            <div class="con">
-                                <h3><i aria-hidden="true" data-icon="&#x5b;"></i>团队协作开发<em>(公司项目)</em></h3>
-                                <p>一个在线团队任务协作工具</p>
+                            <div>
+                                <h3>汇通航运App</h3>
+                                <p>
+                                    搭建react native的初始架构，从路由、网络、导航等等，在和小伙伴一起开发UI和业务逻辑，用时一个月开发完成后上线
+                                    <br />
+                                    基本功能就是船主、船员认证等，接单，查看运单等等功能。抽离业务组件和基本组件，减少耦合。
+                                    <br />
+                                    由于业务逻辑没有跨很多模块也没有那么复杂，状态管理就选择了mobx。
+                                    部分图片选择了iconfont的方式，减少图片数量，减少包体积，可以修改图片的颜色，增加了灵活性。
+                                </p>
                             </div>
-                            <a href="javascript:;" class="btn_go btn_green product_1 r5">了解细节<i aria-hidden="true"
-                                    data-icon="&#x35;"></i></a>
+                        </li>
+
+                        <li class="clearfix">
+                            <div>
+                                <h3>React Native小程序框架搭建</h3>
+                                <p>
+                                    和同事共同研究了市面上rn拆包的的几个方案，分析了各自的优缺点，选择了Facebook的打包工具是metro
+                                    <br />
+                                    模仿微信小程序的方式，加载不用业务模块的bundle，与基础包bunlde合并后展示，业务模块间实现解耦。
+                                    <br />
+                                    开发时，各个业务模块通过子模块方式导入，抽离共用部分到基础模块中
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3>红狮数字矿山</h3>
+                                <p>参与了项目的需求分析、架构和开发选择模式等，使用React Native开发，前期和同事合作开发，后期独立进行迭代和维护
+                                    <br />
+                                    因为项目数据接口没这么复杂，所以就只是用到了mobx而不是redux；前期利用rn自带的手势和动画完成简单交互，当加深r学习之后，使用起来更加简便和效率更好的eact-native-gesture-handler手势库的运用，可以做到很多复杂的交互动画，例如用过手机和地图高清图片基本做到地图对应的功能；有效解决深浅拷贝的问题；
+                                    <br />
+                                    对接讯飞语音识别功能，腾讯云ocr文字识别功能等
+                                    <br />
+                                    原生桥接组件开发、工具类开发，方便以后其他项目使用
+                                    <br />
+                                    项目主要是为了帮助矿山智能办公，实时展示矿山作业中所有数据，下发作业指令和重新调度作业指令，处理异常情况、审核下发指令和调度指令，根据用户权限给予不同的APP的功能等。
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3>红狮环保</h3>
+                                <p>参与了项目的需求分析、架构和开发选择模式等，独立开发的原生app，使用OC和Swift两个语言。
+                                    <br />
+                                    项目是利用MVC和MVVM，ReactiveObjC协助MVVM双向绑定，利用子模块方式，抽离公用组件，在用CocoaPods加载需要的子模块
+                                    <br />
+                                    主界面使用ViewDeck抽屉样式，Charts绘画圆柱图等，高德地图规划企业之间路线在加上手势交互
+                                    <br />
+                                    项目主要是帮助产废企业可以通过手机下发清除废料的订单，企业可以通过自己的定位，APP提供最近清楚废料的附近企业，方便查找。
+                                    之后通过人工方式确认合同，手机上同样会记录签约合同的过程和处理废料等过程。
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3>红狮在线</h3>
+                                <p>和同事一起开发的第一个uni-app，由于前期的学习成本不算高，还可以利用uni-app的性质，简化开发的成本
+                                    <br />
+                                    项目内容基本上就是把红狮员工在线项目里面的功能全部重构，
+                                    <br />
+                                    抽离公用组件，规划项目目录接口和框架选择。
+                                    <br />
+                                    在学习的同时，尽量完善交互和复杂的界面，界面开发速度比原生要快，效率得到提升。
+                                    但是由于前期uni-app的兼容问题和坑，所以在提测后修改的点还是比较多
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3>红狮员工在线</h3>
+                                <p>和同事一起开发的老项目app
+                                    <br />
+                                    原生app和React Native开发不同的模块后组合在app
+                                    <br />
+                                    项目主要为红狮水泥企业的员工服务的APP，员工可以通过APP，下发签到，查找其他员工信息，审批资料等功能
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3>丛云APP</h3>
+                                <p>该APP主要是通过手机配上卖出公司或厂商排除的智能设备，通过手机配上只能设备，在通过手机端远程操作智能设备。
+                                    <br />
+                                    2016-2017年：Objective-C维护和开发新功能
+                                    <br />
+                                    包含用到了MVC，代理，策略，单例等模式；配置ci自动打包脚本，打包成功后会发送到钉钉，让新版本发布更加方便；websocket维持与云端的长连接发送指令数据更新等功能；根据设备ip用过UDP和设备进行长连接发送控制指令等功能；设备的控制界面利用了桥接方式是H5和原生进行交互
+                                    <br />
+                                    2017年：开始使用React-Native开发，之后增加了场景，联动等功能
+                                    <br />
+                                    利用redux让所有视图都能拿到state来改变自己的视图内容；重新自定义了webView的组件使用；热更新；自定义library功能模块（配网，第三方登录，推送，局域网等）
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3>云知屋APP</h3>
+                                <p>项目从零开始和组员一起开发，和丛云一样的智能家居的APP，多了场景，联动，设备消息中心模块功能。
+                                    <br />
+                                    在丛云的基础上，对接了萤石摄像头等第三方设备，用到了MVVM和RAC，在做场景联动是把复杂的逻辑放到VM去处理；
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3>创意梦想APP</h3>
+                                <p>Web APP，利用加载本地H5zip，利用桥接的方式wkwebview与原生交互，接入了微信支付宝，扫码，获取经纬度等桥接功能。支持下载最新zip更换本地H5。
+                                    <br />
+                                    以此为模板替换过很多马甲
+                                </p>
+                            </div>
                         </li>
                         <li class="clearfix">
                             <div class="con">
-                                <h3><i aria-hidden="true" data-icon="&#x5b;"></i>哈市集<em>(个人项目)</em></h3>
-                                <p>精挑细选的衣物导购平台</p>
+                                <h3>智能家居SDK</h3>
+                                <p>利用工厂模式，单例模式，观察者模式等模式设计SDK。
+                                    <br />
+                                    SDK包含设备配网，设备控制界面与原生的桥接，封装了AFNetWoking的网络请求的头，下载控制界面需要的zip，利用Browser搜索局域网的设备，实现通过udp控制设备，websocket维持登录后的心跳。
+                                </p>
                             </div>
-                            <a href="javascript:;" class="btn_go btn_green product_2 r5">了解细节<i aria-hidden="true"
-                                    data-icon="&#x35;"></i></a>
                         </li>
                         <li class="clearfix">
                             <div class="con">
-                                <h3><i aria-hidden="true" data-icon="&#x5b;"></i>优你网<em>(公司项目)</em></h3>
-                                <p>大学生兼职平台</p>
+                                <h3>优品生活APP</h3>
+                                <p>同城购物项目，利用公司卖出的购物卡，绑定用户就可以利用手机到签约商家当面付，同时支持同城的购物和旅游项目，发票快递</p>
                             </div>
-                            <a href="javascript:;" class="btn_go btn_green product_3 r5">了解细节<i aria-hidden="true"
-                                    data-icon="&#x35;"></i></a>
                         </li>
-                        <li class="clearfix">
+                        <!-- <li class="clearfix">
                             <div class="con">
-                                <h3><i aria-hidden="true" data-icon="&#x5b;"></i>云边轻博客<em>(团队项目)</em></h3>
-                                <p>开源轻博客2.0</p>
-                            </div>
-                            <a href="javascript:;" class="btn_go btn_green product_4 r5">了解细节<i aria-hidden="true"
-                                    data-icon="&#x35;"></i></a>
-                        </li>
-                        <li class="clearfix">
-                            <div class="con">
-                                <h3><i aria-hidden="true" data-icon="&#x5b;"></i>发泄吧<em>(个人项目)</em></h3>
+                                <h3>发泄吧</h3>
                                 <p>发泄社区，2012年出售</p>
                             </div>
-                            <a href="javascript:;" class="btn_go btn_green r5 product_5">了解细节<i aria-hidden="true"
-                                    data-icon="&#x35;"></i></a>
-                        </li>
-                        <li class="clearfix">
-                            <div class="con">
-                                <a href="javascript:;" class="btn_more r5">更多作品</a>
-                            </div>
-                        </li>
-                    </ul>
+                        </li> -->
 
+                    </ul>
 
                 </div>
 
                 <!--right-->
                 <div class="info_area info_right info_timeline">
+
+                    <h5>基本信息</h5>
+                    <ul class="info-list">
+                        <p>
+                            <label class="left-label">学历</label><span class="label-value">本科</span>
+                        </p>
+                        <p>
+                            <label class="left-label">毕业院校</label><span class="label-value">浙江万里学院</span>
+                        </p>
+                        <p>
+                            <label class="left-label">毕业年份</label><span class="label-value">2015</span>
+                        </p>
+                    </ul>
+
+                    <h5><i aria-hidden="true" data-icon="&#x7d;"></i>时间线</h5>
+                    <ul>
+                        <li class="clearfix top">
+                            <!--list样式-->
+                            <div class="dot"><b></b></div>
+                            <!--内容-->
+                            <div class="con">
+                                <h3>宁波青年优品电子商务有限公司</h3>
+                                <p>ios开发工程师</p>
+                                <p class="desc">2015.6 - 2016.5</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <!--list样式-->
+                            <div class="dot"><b></b></div>
+                            <!--内容-->
+                            <div class="con">
+                                <h3>杭州第九区科技有限公司</h3>
+                                <p>ios高级工程师、react native初级工程师</p>
+                                <p class="desc">2016.5 - 2019.3</p>
+                            </div>
+                        </li>
+                        <li class="clearfix bottom">
+                            <!--list样式-->
+                            <div class="dot"><b></b></div>
+                            <!--内容-->
+                            <div class="con">
+                                <h3>杭州兰亮科技有限公司</h3>
+                                <p>ios高级工程师、react native高级工程师</p>
+                                <p class="desc">2019.3 - 至今</p>
+                            </div>
+                        </li>
+                    </ul>
+
                     <h5>我的技能点</h5>
+
+                    <ul class="experience-list">
+                        <p class="desc">1.具备扎实的C、Objective-C、Swift，React Native，以及良好的OOD／OOP编程思想</p>
+                        <p class="desc">2.掌握各类UI控件及机制，掌握MVC/MVVM模式、Delegate模式、单例设计模式、KVO、KVC等开发模式</p>
+                        <p class="desc">3.掌握fastlane快速打包脚本提高打包效率</p>
+                        <p class="desc">4.掌握H5桥接和React Native等技术原理</p>
+                        <p class="desc">5.掌握iOS下网络通信机制，熟悉TCP/IP，HTTP协议</p>
+                        <p class="desc">6.熟悉多线程以及Socket通信、Runtime</p>
+                        <p class="desc">8.熟悉shell和Python</p>
+                        <p class="desc">7.掌握Flutter开发</p>
+                        <p class="desc">9.有较强的源代码阅读、学习能力、以及较强的技术文档编写能力</p>
+                    </ul>
+                    <br/>
+
                     <dl class="clearfix">
                         <dt>Objective-C</dt>
                         <dd>
@@ -213,40 +377,6 @@
                             <em></em>
                         </dd>
                     </dl>
-
-                    <h5><i aria-hidden="true" data-icon="&#x7d;"></i>时间线</h5>
-                    <ul>
-                        <li class="clearfix top" id="s1">
-                            <!--list样式-->
-                            <div class="dot"><b></b></div>
-                            <!--内容-->
-                            <div class="con">
-                                <h3>公司一</h3>
-                                <p>ios开发工程师</p>
-                                <p class="desc">2015.6 - 2016.5</p>
-                            </div>
-                        </li>
-                        <li class="clearfix" id="s2">
-                            <!--list样式-->
-                            <div class="dot"><b></b></div>
-                            <!--内容-->
-                            <div class="con">
-                                <h3>公司二</h3>
-                                <p>ios高级工程师、react native高级工程师</p>
-                                <p class="desc">2016.5 - 2019.3</p>
-                            </div>
-                        </li>
-                        <li class="clearfix bottom" id="s3">
-                            <!--list样式-->
-                            <div class="dot"><b></b></div>
-                            <!--内容-->
-                            <div class="con">
-                                <h3>公司三</h3>
-                                <p>ios高级工程师、react native高级工程师</p>
-                                <p class="desc">2019.3 - 至今</p>
-                            </div>
-                        </li>
-                    </ul>
 
                 </div>
 
